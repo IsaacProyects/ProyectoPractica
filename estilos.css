@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background: #02272e;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+
+nav {
+  background: #02272e;
+  float: left;
+  margin-top: 0px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  font-family: script;
+  font-size: 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #244850;
+}
+
+.logo a img {
+  display: block;
+  width: 75px;
+  height: auto;
+  border: 5px solid black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.product {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+article {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background-color: #02272e;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: script;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+details ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+input[type="reset"] {
+  background-color: #f44336;
+  color: white;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 15%;
+  box-sizing: border-box;
+}
+
+select:hover {
+  border-color: #555;
+}
+
