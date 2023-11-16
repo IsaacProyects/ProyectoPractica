@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <title>El Rincón del Papel</title>
+  <link rel="stylesheet" href="estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="logo">
+        <a href="index.html"><img src="logo.jpeg" alt="El Rincón del Papel"></a>
+      </li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="categorias.html">Categorias</a></li>
+      <li><a href="trabaja.html">Trabaja Con Nosotros</a></li>
+      <li style="border: 5px solid black; padding: 0px;"><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <h1>Acerca del creador</h1>
+  
+  <div class="container">
+    <div class="product">
+      <center><h2>Informacion</h2></center>
+      <br>
+      <p>Kevin Isaac Bolivar Pardo</p>
+      <p>Correo: bolivarkevin028isaac@gmail.com</p>
+      <p>Telefono: 314 517 9458</p>
+    </div>
+    <div class="product">
+      <details>
+        <summary>PQRS</summary>
+        <br>
+        <ul>
+          <li>
+            <label for="pqrsType">Tipo de PQRS:</label>
+            <select id="pqrsType" name="PQRS">
+              <option value="N0"></option>
+              <option value="Peticiones">Peticiones</option>
+              <option value="Quejas">Quejas</option>
+              <option value="Reclamos">Reclamos</option>
+              <option value="Sugerencias">Sugerencias</option>
+            </select>
+          </li>
+          <li>
+            <br>
+            <form action="MAILTO:usuario@gmail.com" method="POST" enctype="text/plain">
+              <textarea id="pqrsText" name="PQRS" rows="5" cols="50"></textarea>
+              <br>
+              <br>
+              <input type="submit" value="ENVIAR INFORMACION">
+              <input type="reset" value="BORRAR"><br><br>
+            </form>
+          </li>
+        </ul>
+      </details>
+    </div>
+    <div class="product">
+      <details>
+        <summary>Dejanos tus comentarios</summary>
+        <br>
+        <ul>
+          <li>
+            <form action="MAILTO:usuario@gmail.com" method="POST" enctype="text/plain">
+              <label for="comments">Comentarios:</label><br>
+              <textarea id="comments" name="Comentarios" rows="5" cols="50"></textarea>
+              <br>
+              <br>
+              <input type="submit" value="ENVIAR INFORMACION">
+              <input type="reset" value="BORRAR"><br><br>
+            </form>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p>&copy; 2023 Página con fines educativos | Todos los derechos reservados Kevin Bolivar | Imagenes generadas por IA</p>
+  </footer>
+</body>
+</html>
