@@ -16,15 +16,14 @@
     <nav>
         <ul>
           <li class="logo">
-            <a href="index.html"><img src="img/logo.jpeg" alt="El Rincón del Papel"></a>
+            <a href="login.php"><img src="img/logo.jpeg" alt="El Rincón del Papel"></a>
           </li>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="categorias.html">Categorias</a></li>
-          <li><a href="trabaja.html">Trabaja Con Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li style="border: 5px solid black; padding: 0px;"><a href="login.html">Iniciar sesión</a></li>
+          <li><a href="login.php">Inicio</a></li>
+          <li><a href="login.php">Nosotros</a></li>
+          <li><a href="login.php">Galeria</a></li>
+          <li><a href="login.php">Categorias</a></li>
+          <li><a href="login.php">Trabaja Con Nosotros</a></li>
+          <li><a href="login.php">Contacto</a></li>
         </ul>
       </nav>
       <br><br><br><br>
@@ -44,23 +43,23 @@
                     </div>
                 </div>
 
-                <!--Formulario de Login y registro-->
+                <!--Formularios-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="" class="formulario__login">
+                    <form action="php/login_usuario_be.php" method="POST" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" placeholder="Correo Electronico" name="correo">
+                        <input type="password" placeholder="Contraseña" name="contrasena">
                         <button>Entrar</button>
                     </form>
 
                     <!--Register-->
-                    <form action="" class="formulario__register">
+                    <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo">
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" placeholder="Nombre completo" name="nombre">
+                        <input type="text" placeholder="Correo Electronico" name="correo">
+                        <input type="text" placeholder="Usuario" name="usuario">
+                        <input type="password" placeholder="Contraseña" name="contrasena">
                         <button>Regístrarse</button>
                     </form>
                 </div>
