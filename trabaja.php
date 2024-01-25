@@ -1,3 +1,18 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['usuario'])){
+  echo'
+  <script>
+  alert("Se debe iniciar sesion");
+  window.location = "index.php";
+  </script>
+  ';
+  die();
+  session_destroy();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es-CO">
 <head>
@@ -10,15 +25,15 @@
   <nav>
     <ul>
       <li class="logo">
-        <a href="inicio.html"><img src="img/logo.jpeg" alt="El Rincón del Papel"></a>
+        <a href="inicio.php"><img src="img/logo.jpeg" alt="El Rincón del Papel"></a>
       </li>
-      <li><a href="inicio.html">Inicio</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="categorias.html">Categorias</a></li>
-      <li style="border: 5px solid black; padding: 0px;"><a href="trabaja.html">Trabaja Con Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="index.php">Cerrar sesión</a></li>
+      <li><a href="inicio.php">Inicio</a></li>
+      <li><a href="nosotros.php">Nosotros</a></li>
+      <li><a href="galeria.php">Galeria</a></li>
+      <li><a href="categorias.php">Categorias</a></li>
+      <li style="border: 5px solid black; padding: 0px;"><a href="trabaja.php">Trabaja Con Nosotros</a></li>
+      <li><a href="contacto.php">Contacto</a></li>
+      <li><a href="php/cerrar_sesion.php">Cerrar sesión</a></li>
     </ul>
   </nav>
   <h1>¡Trabaja con nosotros!</h1>

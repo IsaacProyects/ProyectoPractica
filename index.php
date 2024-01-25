@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION['usuario'])){
+    header("location: inicio.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es-CO">
 <head>
@@ -16,14 +25,14 @@
     <nav>
         <ul>
           <li class="logo">
-            <a href="login.php"><img src="img/logo.jpeg" alt="El Rincón del Papel"></a>
+            <a href="index.php"><img src="img/logo.jpeg" alt="El Rincón del Papel"></a>
           </li>
-          <li><a href="login.php">Inicio</a></li>
-          <li><a href="login.php">Nosotros</a></li>
-          <li><a href="login.php">Galeria</a></li>
-          <li><a href="login.php">Categorias</a></li>
-          <li><a href="login.php">Trabaja Con Nosotros</a></li>
-          <li><a href="login.php">Contacto</a></li>
+          <li><a href="index.php">Inicio</a></li>
+          <li><a href="index.php">Nosotros</a></li>
+          <li><a href="index.php">Galeria</a></li>
+          <li><a href="index.php">Categorias</a></li>
+          <li><a href="index.php">Trabaja Con Nosotros</a></li>
+          <li><a href="index.php">Contacto</a></li>
         </ul>
       </nav>
       <br><br><br><br>
