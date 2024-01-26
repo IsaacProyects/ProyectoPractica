@@ -1,7 +1,7 @@
 <?php
 
 
-$conexion = mysqli_connect("localhost", "root", "", "el rincón del papel");
+$conexion = mysqli_connect("localhost", "root", "", "el rincon del papel");
 /*
 if($conexion){
     echo "Conectado exitosamente a la base de datos";

@@ -9,7 +9,7 @@ $contrasena = $_POST['contrasena'];
 //Encriptamiento de contraseña
 $contrasena = hash('sha512', $contrasena);
 //Listo
-$query = "INSERT INTO usuarios(Nombre_Completo, Correo, Usuario, Contraseña)
+$query = "INSERT INTO usuarios(Nombre_Completo, Correo, Usuario, Contrasena)
 VALUES('$nombre', '$correo', '$usuario', '$contrasena')";
 
 //verificacion para evitar repeticiones en la bd
